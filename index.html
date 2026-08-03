@@ -1,41 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-<title>GitHub Webhook Demo</title>
-
-<link rel="stylesheet" href="style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfraFox CI/CD Pipeline</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<h1>CI/CD Successful 🚀</h1>
+        <h1>🚀 InfraFox CI/CD Pipeline</h1>
 
-<p>This website is deployed automatically using:</p>
+        <p class="subtitle">
+            Automatic Website Deployment using GitHub Webhooks, Jenkins & Docker
+        </p>
 
-<ul>
+        <div class="card">
 
-<li>GitHub</li>
+            <h2>Deployment Status</h2>
 
-<li>Webhook</li>
+            <p class="success">✅ Successfully Deployed</p>
 
-<li>Jenkins</li>
+            <p>
+                Every <strong>Git Push</strong> automatically triggers:
+            </p>
 
-<li>Docker</li>
+            <ol>
+                <li>📂 GitHub Repository</li>
+                <li>🔔 GitHub Webhook</li>
+                <li>⚙️ Jenkins Pipeline</li>
+                <li>🐳 Docker Image Build</li>
+                <li>🚀 Docker Container Deployment</li>
+            </ol>
 
-<li>Success!</li>
+        </div>
 
-</ul>
+        <button onclick="showMessage()">
+            Verify Deployment
+        </button>
 
-<button onclick="hello()">Click Me</button>
+        <p id="message"></p>
 
-</div>
+        <footer>
+            <p>Created by <strong>Jagan P</strong></p>
+        </footer>
 
-<script src="script.js"></script>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 

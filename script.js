@@ -1,5 +1,5 @@
-function hello(){
+function showMessage() {
 
-alert("Website Updated Successfully!");
-
+    document.getElementById("message").innerHTML =
+        "🎉 CI/CD Pipeline Verified Successfully!";
 }

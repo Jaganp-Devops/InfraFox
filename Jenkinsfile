@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-```
 environment {
     IMAGE_NAME = "infrafox-web"
     CONTAINER_NAME = "infrafox-web"
@@ -41,4 +40,4 @@ stages {
         }
     }
 }
-```
+
